@@ -1,0 +1,34 @@
+.gbIcon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px !important ;
+}
+.gbUndoRedo{
+    background-color: #7ed0ec;
+}
+.gbUndoRedo:hover{
+    background-color: #0eb8f1;
+}
+.gbClose:hover{
+    background-color: rgb(245, 7, 7);
+}
+.gbPopUp{
+    padding: 5px 10px;
+    border-radius: 50%;
+    border:1px solid rgb(19, 19, 19);
+    background-color: rgb(69, 69, 69);
+    color:white;
+    font-weight: 400;
+    z-index: 99999999;
+    position: absolute;
+    top:3.5rem;
+    display: none;
+}
+.gbIcon:hover .gbPopUp{
+    display: block;
+}

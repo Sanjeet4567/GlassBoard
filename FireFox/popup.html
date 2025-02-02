@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <style>
+        div {
+            border-radius: 20px;
+            overflow: hidden; /* Ensure content doesn't spill outside the rounded corner */
+            
+            
+        }
+        h1{
+            background-clip: text;
+            font-size: 50px;
+            padding-bottom: 5px;
+            background: linear-gradient(45deg,rgb(1, 1, 70), rgb(0, 213, 255));
+            background-size: 400% 400%; /* Make the gradient large enough for animation */
+            animation: gradientAnimation 6s ease infinite; 
+            color: transparent; /* Make the text transparent */
+            -webkit-background-clip: text; /* Clip background to text */
+            background-clip: text; /* Clip background to text */
+            font-weight: bold;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; 
+            width:300px;
+            background-color: rgb(29, 21, 36); /* Keep body background transparent */
+        }
+
+        button {
+            background-color: rgb(46, 215, 215);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 200px; width: 300px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <h1>GlassBoard</h1>
+        <button id="toggleWhiteboard" >Toggle GlassBoard</button>
+    </div>
+    
+
+    <script src="popup.js"></script>
+</body>
+</html>
